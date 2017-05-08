@@ -96,6 +96,7 @@ Technologies used/npm Modules
 *  dotenv
 *  nodemon: to track what happens in the server
 *  postgress
+*  bootstrap
 
 
 <!--Download Project & Install
