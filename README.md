@@ -10,15 +10,19 @@ Landing page
 ![](home.png)
 
 Goverment Database
+
 ![](govdb.png)
 
 When the user click on the mignifier he should see 
+
 ![](veiw.png)
 
 Embassy Database
+
 ![](embasydb.png)
 
 Applicant interface
+
 ![](USER.PNG)
 
 
