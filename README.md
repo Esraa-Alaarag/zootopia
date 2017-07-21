@@ -52,7 +52,7 @@ Zootopia is an application for Zootopia Embassy that helps people who apply to r
 
 ## WIREFRAMES:
 
-![user interface](./img/user.png)
+![user interface](./img/USER.PNG)
 
 </a>
 
