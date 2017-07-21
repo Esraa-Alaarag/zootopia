@@ -81,7 +81,6 @@ Zootopia is an application for Zootopia Embassy that helps people who apply to r
 ### Middleware:
 
 - axios
-- react-routers
 
 ### APIs:
 
