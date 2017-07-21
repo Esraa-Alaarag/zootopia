@@ -1,36 +1,7 @@
 let payLoad = document.querySelector('#payload');
 let baseURL = 'https://young-badlands-16070.herokuapp.com/userdb';
 
-var counter=0
-function readAllItems(e) {
-  e.preventDefault();
-  console.log(baseURL);
-  axios.get(baseURL)
-    .then(function(res) {
-      console.log(res.data.data);
-      payLoad.innerHTML = "";
-      res.data.data.forEach(function(d, c) {
-        console.log(++counter);
-        payLoad.innerHTML += 
-        `<tr id=itemid_${d.id}>
-          <td>${d.id}</td>
-          <td id=item_${d.id}>${d.item}</td> 
-          <td id=note_${d.id} >${d.note}</td> 
-          <td id=rating_${d.id}>${d.rating}</td> 
-          <td id=time_${d.id}>${d.time}</td> 
-          <td id=spicy_${d.id}>${d.spicy}</td> 
-          <td id=cost_${d.id} >${d.cost}</td> 
-          <td>    
-            <button type="button" id=update_${d.id} data-toggle="modal" data-target="#myModal" class="update">📝</button>
-            <button type="button" id=dlt_${d.id} class="delete">🗑</button>
-          </td>
-        </tr>`
-      })
-    })
-    .catch(function(err) {
-      console.log(err)
-    })
-}
+var counter=0;
 
 function readItem(e) {
   console.log('read one item');
@@ -46,6 +17,12 @@ function readItem(e) {
   .then(function(res) {
     if(res.data.status=='success'){
     let d= res.data.data;
+    if(!d.startdate){
+      d.startdate="No information";
+    }
+    if(!d.finishdate){
+      d.finishdate="No information";
+    }
   console.log(d);
   payLoad.innerHTML = "";
         payLoad.innerHTML += 
