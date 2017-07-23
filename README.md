@@ -28,8 +28,7 @@ Zootopia is an application for Zootopia Embassy that helps people who apply to r
 *	Basic CRUD (Create, Read, Update and Delete) with postman.
 *	Cross-origin Resource Sharing using by using CORS middleware.
 
-#### Live demo:https://zootopia-api.herokuapp.com/2.Embassy of Zootopia app
-2.Embassy of Zootopia app:
+#### Live demo:https://zootopia-api.herokuapp.com/2.Embassy of Zootopia app:
 This part is for the official use of the embassy staff. The embassy staff can import the applicant information from the government API and store it to the embassy database. they can add the date the application was received and update the status of the application and the date when the status was updated.
 Also this part serve as API for Zootopia citizen APP.  Zootopia citizen AP make axios get Request to this API to get the status of the application.
 
